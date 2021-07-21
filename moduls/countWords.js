@@ -1,3 +1,5 @@
+const CreateCorrectWordsArr = require('./createCorrectWordsArr')
+
 function CountWords(str) {
 
     let wordsArr = CreateCorrectWordsArr(str);
@@ -24,12 +26,6 @@ function PrintResult(map) {
         console.log(`${key}: ${value}`);
     });
     console.log('__________');
-}
-
-function CreateCorrectWordsArr(str) {
-    sameStyleWordArr = str.toLowerCase().replace(/[.,!—]/g, ' ').split(' ').filter(word => word.length !== 0);
-
-    return sameStyleWordArr;
 }
 
 module.exports = CountWords;

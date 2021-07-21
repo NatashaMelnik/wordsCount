@@ -1,6 +1,6 @@
 // Написать функцию определения частоты слов в текст
 
-const CountWords = require('./countWords')
+const CountWords = require('./moduls/countWords')
 
 const sentenceArr = [
     ['Весь сад в дожде! Весь дождь в саду! Погибнут дождь и сад друг в друге, Оставив мне решать судьбу Зимы, явившейся на юге.'],
@@ -12,7 +12,6 @@ function main() {
     sentenceArr.forEach(sentence => {
         CountWords(sentence[0]);
     });
-
 }
 
 main();
